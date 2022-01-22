@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flyaway</title>
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	 <script>  $( function() {$( "#datepicker" ).datepicker();  } );  </script>
+	    
+</head>
+<body>
+	<h1>Fly Away</h1>
+	<h2>Booking Portal</h2>
+	<h3>Flight Search</h3>
+	<form action="AvailableFlight" method="post">
+
+		<table border="1" cellpadding="5">
+		  <tr>
+		    <td>Enter Date of Travel:</td>
+		    <td><input type="date" class="form-control" id="datepicker" name="udate"></td>
+		  </tr>
+		  <tr>
+		    <td>Traveling From:</td>
+		    <td>
+				<select name="usource">
+				  <option value="INDIA">India</option>
+				  <option value="USA">USA</option>
+				  <option value="UK">UK</option>
+				</select>
+		    </td>
+		  </tr>
+	
+		  <tr>
+		    <td>Destination:</td>
+		    <td>
+				<select name="udestination">
+				  <option value="UK">UK</option>
+				  <option value="USA">USA</option>
+				  <option value="INDIA">India</option>
+				</select>
+		    </td>
+		  </tr>
+	
+		  <tr>
+		    <td>Number of Persons:</td>
+		    <td>
+		    	<select name="upersons">
+			    	<option value="1">1</option>
+			    	<option value="2">2</option>
+			    	<option value="3">3</option>
+			    	<option value="4">4</option>
+			    	<option value="5">5</option>
+			    	<option value="6">6</option>
+			    </select>
+		    </td>
+		  </tr>
+	
+		  <tr>
+		  	<td></td>
+		    <td><input type="submit" value="Next"></td>
+		  </tr>
+		</table>	
+	</form>
+</body>
+</html>

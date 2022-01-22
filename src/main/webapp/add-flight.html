@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flyaway</title>
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	 <script>  $( function() {$( "#datepicker" ).datepicker() });  </script>
+	    
+</head>
+<body>
+	<h1>Fly Away</h1>
+	<h2>Booking Portal</h2>
+	<h3>Flight Search</h3>
+	<form action="AddFlight" method="post">
+
+		<table border="1" cellpadding="5">
+		  <tr>
+		    <td>Flight Code:</td>
+		    <td>
+		    	<input type="text" name="nflightcode">
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>Flight Date:</td>
+		    <td><input type="datetime-local" class="form-control" id="datepicker" name="ndate"></td>
+		  </tr>
+		  <tr>
+		    <td>Source:</td>
+		    <td>
+				<select name="nsource">
+				  <option value="INDIA">India</option>
+				  <option value="USA">USA</option>
+				  <option value="UK">UK</option>
+				</select>
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>Destination:</td>
+		    <td>
+				<select name="ndestination">
+				  <option value="UK">UK</option>
+				  <option value="USA">USA</option>
+				  <option value="INDIA">India</option>
+				</select>
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>Ticket Fare:</td>
+		    <td>
+		    	<input type="number" name="nticketprice">
+		    </td>
+		  </tr>
+		  <tr>
+		  	<td></td>
+		    <td><input type="submit" value="Add"></td>
+		  </tr>
+		</table>	
+	</form>
+</body>
+</html>
